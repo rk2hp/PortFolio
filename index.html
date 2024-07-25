@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="CursorStyle.css">
+    <link rel="stylesheet" href="navigatiobar.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        :root{
+            --primary-color: white;
+            --secondary-color: #212121;
+        }
+        .dark-theme{
+            --primary-color: black;
+            --secondary-color: white;
+        }
+        body{
+            background-color: var(--primary-color);
+            display: block;
+            
+        }
+
+        #sec1{
+            height: 100vh;
+            padding-inline: 20vw;
+            color: var(--secondary-color);
+            border: 2px solid red;
+           
+        }
+        #sec2{
+            height: 100vh;
+            padding: 10px;
+            color: var(--secondary-color);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="header" >
+        <div id="logoBox">
+            <p>PRASHANT</p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li class="item"><a href="" class="itm">Home</a></li>
+                <li class="item"><a href="" class="itm">About Me</a></li>
+                <li class="item"><a href="" class="itm">Highlights</a></li>
+                <li class="item"><a href="" class="itm">Contact Details</a></li>
+            </ul>
+
+        </nav>
+        <div class="Ham_And_Search_Box">
+            <div class="searchContainer">
+                <div id="searchbox">
+                    <input type="text" class="" name="" id="input-search-text" placeholder="Search">
+                    <a href="#" class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="DayNightMode">
+                <img src="portfolio img/moon.png" alt="" id="icon">
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+       
+    </header>
+    
+    <section id="sec1">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias nostrum enim, dolore facere amet corrupti, natus cupiditate sapiente, et quod incidunt dolor dolorum neque quaerat repellat a reiciendis. Iure, praesentium?
+        </p>
+    </section>
+    <hr>
+    <section id="sec2">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias nostrum enim, dolore facere amet corrupti, natus cupiditate sapiente, et quod incidunt dolor dolorum neque quaerat repellat a reiciendis. Iure, praesentium?
+        </p>
+    </section>
+<script>
+    var icon = document.getElementById("icon");
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "portfolio img/sun.png"
+        }
+        else{
+             icon.src = "portfolio img/moon.png"
+        }
+    }
+</script>
+</body>
+</html>
