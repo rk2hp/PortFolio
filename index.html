@@ -32,7 +32,9 @@
 
         #sec1{
             height: 100vh;
+            margin-top: 15px;
             padding-inline: 20vw;
+            /* padding-top: 15px; */
             color: var(--secondary-color);
             /* border: 2px solid red; */
             
@@ -40,6 +42,7 @@
         #sec2{
             height: 100vh;
             padding: 10px;
+
             color: var(--secondary-color);
         }
         #sec3{
@@ -54,7 +57,7 @@
 <body>
     <header class="header" >
         <div id="logoBox">
-            <p>PRASHANT</p>
+            <p>RK2HP</p>
         </div>
         <nav class="navbar">
             <ul>
@@ -88,7 +91,7 @@
     
     <section id="sec1">
         <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias nostrum enim, dolore facere amet corrupti, natus cupiditate sapiente, et quod incidunt dolor dolorum neque quaerat repellat a reiciendis. Iure, praesentium?
+           " This is time will pass very soon just like your loved ones "
         </p>
     </section>
     <hr>
@@ -102,6 +105,9 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias nostrum enim, dolore facere amet corrupti, natus cupiditate sapiente, et quod incidunt dolor dolorum neque quaerat repellat a reiciendis. Iure, praesentium?
         </p>
     </section>
+
+
+
 <script>
     var icon = document.getElementById("icon");
     icon.onclick = function(){
@@ -112,6 +118,13 @@
         else{
              icon.src = "portfolio img/moon.png"
         }
+    }
+</script>
+<script>
+    hamburger = document.querySelector(".hamburger")
+    hamburger.onclick = function(){
+        navbar = document.querySelector(".navbar")
+        navbar.classList.toggle("active")
     }
 </script>
 </body>
