@@ -24,9 +24,9 @@
 #logoBox p{
     font-weight: bold;
     font-size: 18px;
-    
+    padding-left:7px;
     color: var(--secondary-color);
-    font-family:'Times New Roman', Times, serif;
+    font-family: "Kalam";
 }
 
 .navbar {
@@ -154,20 +154,29 @@
 @media (max-width:863px) {
     .hamburger {
         height: 100%;
-        width: 40px;
-        display: block;
+        width: 35px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
         margin-inline: 5px;
-        padding-top:3px ;
+        /* padding-top:3px ; */
         /* border: 2px solid green; */
         cursor: pointer;
     }
-
+/* 
     .line {
         width: 100%;
         height: 4px;
         background-color: var(--secondary-color);
         margin-top: 6px;
         border-radius: 30px;
+    } */
+    .fa{
+        color: var(--secondary-color);
+        font-size:26px;
+    }
+    .fa-times{
+        font-size: 30px;
     }
 
     .navbar {
@@ -177,7 +186,8 @@
         left: 0;
         right: 0;
         width: 100vw;
-        background-color: var(--primary-color);
+        background-color: rgb(211 205 205);
+        backdrop-filter: blur(200px);
         transition: 0.5s;
         overflow: hidden;
     }
@@ -187,8 +197,11 @@
         justify-content: space-evenly;
 
     }
+    .itm{
+        color: black;
+    }
     .navbar.active{
-        height: 450px;
+        height: 300px;
     }
 
 }

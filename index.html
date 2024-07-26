@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortFolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link rel="stylesheet" href="CursorStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="navigatiobar.css">
     <style>
         * {
@@ -57,7 +58,7 @@
 <body>
     <header class="header" >
         <div id="logoBox">
-            <p>RK2HP</p>
+            <p>LOGO</p>
         </div>
         <nav class="navbar">
             <ul>
@@ -81,9 +82,10 @@
                 <img src="portfolio img/moon.png" alt="" id="icon">
             </div>
             <div class="hamburger">
+                <!-- <div class="line"></div>
                 <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+                <div class="line"></div> -->
+                <i class="fa fa-bars" id="menu"></i>
             </div>
         </div>
        
@@ -121,10 +123,14 @@
     }
 </script>
 <script>
-    hamburger = document.querySelector(".hamburger")
+    hamburger = document.querySelector(".hamburger");
+    
     hamburger.onclick = function(){
-        navbar = document.querySelector(".navbar")
-        navbar.classList.toggle("active")
+        navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+        var menu = document.getElementById("menu");
+        menu.classList.toggle("fa-bars");
+        menu.classList.toggle("fa-times");
     }
 </script>
 </body>
