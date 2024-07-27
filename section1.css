@@ -1,0 +1,8 @@
+#sec1{
+    height: 100vh;
+    margin-top: 15px;
+    padding-inline: 20vw;
+    /* padding-top: 15px; */
+    color: var(--secondary-color);
+    /* border: 2px solid red; */
+}

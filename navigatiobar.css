@@ -177,7 +177,7 @@
     }
     .fa-times{
         font-size: 30px;
-    }
+    } 
 
     .navbar {
         height: 0px;
@@ -197,11 +197,18 @@
         justify-content: space-evenly;
 
     }
+    .item::before{
+         display: none; /*there will be no underline in phone view */
+    } 
+  
+    
     .itm{
         color: black;
+    
     }
     .navbar.active{
         height: 300px;
-    }
 
+    }
+         
 }
